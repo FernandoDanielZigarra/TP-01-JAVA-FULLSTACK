@@ -94,8 +94,8 @@ header {
 }
 
 .hero_title_container {
-    flex-basis: 300px;
-    min-width: 50%;
+    flex-basis: 50%;
+    min-width: 350px;
 }
 
 .hero_title_container h1 {
@@ -182,11 +182,14 @@ header {
     border-radius: 10px;
     padding: 5%;
     border: 1px solid rgba(0, 0, 0, 0.205);
-    gap: 10px;
+    flex-wrap: wrap;
+    row-gap: 2rem;
 }
 
 .form_container img, .form_container form{
-    width: 50%;
+    flex-basis: 350px;
+    min-width: 50%;
+
 }
 
 .form_container form{
@@ -197,12 +200,13 @@ header {
 }
 
 .form_container form input{
-    padding: 5px 3px;
+    padding: 10px;
     border-radius: 5px;
     border: none;
     margin: 10px 0;
     width: 90%;
-    border: 1px solid rgba(0, 0, 0, 0.205);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    outline: none;
 }
 
 .form_container form label{
@@ -212,14 +216,15 @@ header {
 .form_container form textarea{
     width: 90%;
     padding: 10px;
-    border: 1px solid rgba(0, 0, 0, 0.205);
+    border: 1px solid rgba(0, 0, 0, 0.5);
     resize: none;
     border-radius: 10px;
+    outline: none;
 }
 
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
     color: black;
-    opacity: 0.2;
+    opacity: 0.5;
 }
 
 footer{
