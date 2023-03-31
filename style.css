@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+:root {
+    --primary: #ECF2FF;
+    --secondary: #3E54AC;
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+html {
+    width: 100vw;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--primary);
+    scroll-behavior: smooth;
+}
+
+header {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+}
+
+.nav_container {
+    width: max-content;
+    margin-left: auto;
+}
+
+.nav_item {
+    display: inline-block;
+    margin: 30px;
+}
+
+.nav_item a {
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: bold;
+    text-shadow: 1px 1px 5px var(--secondary);
+}
+
+.hero {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: #4158D0;
+    background-image: linear-gradient(30deg, #4158D0 0%, #655DBB 46%, #BFACE2 100%);
+    text-align: center;
+
+}
+
+.waves {
+    transform: rotate(180deg);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.hero_container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+}
+
+.hero_img_container {
+    width: 50%;
+}
+
+.hero_title_container {
+    width: 50%;
+}
+
+.hero_title_container h1 {
+    color: var(--primary);
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 2rem;
+    text-shadow: 1px 1px 1px var(--primary);
+}
+
+.hero_title_container p {
+    margin-top: 20px;
+    color: var(--primary);
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.img_section {
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 10vh;
+    width: 90%;
+    max-width: 1000px;
+    height: 90vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+    background-color: rgba(255, 255, 255, 0.479);
+    
+}
+
+.card {
+    display: flex;
+    width: 90%;
+    max-width: 850px;
+    height: 250px;
+    padding: 25px 30px;
+    box-shadow: 10px 10px 5px -9px rgba(0, 0, 0, 0.75);
+    background-color: rgba(255, 255, 255, 0.733);
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.205);
+
+}
+
+.card img {
+    object-fit: cover;
+    width: 40%;
+}
+
+.card div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    padding: .3em;
+    gap: 10px;
+}
+
+.card div h2{
+    letter-spacing: 2px;
+}
+
+.form_section{
+    width: 100vw;
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5%;
+    flex-direction: column;
+    gap: 5%;
+}
+
+.form_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    max-width: 1000px;
+    box-shadow: 10px 10px 5px -10px rgba(0, 0, 0, 0.75);
+    background-color: rgba(255, 255, 255, 0.733);
+    border-radius: 10px;
+    padding: 5%;
+    border: 1px solid rgba(0, 0, 0, 0.205);
+    gap: 10px;
+}
+
+.form_container img, .form_container form{
+    width: 50%;
+}
+
+.form_container form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form_container form input{
+    padding: 5px 3px;
+    border-radius: 5px;
+    border: none;
+    margin: 10px 0;
+    width: 90%;
+    border: 1px solid rgba(0, 0, 0, 0.205);
+}
+
+.form_container form label{
+    margin-bottom: 5px;
+}
+
+.form_container form textarea{
+    width: 90%;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.205);
+    resize: none;
+    border-radius: 10px;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    color: black;
+    opacity: 0.2;
+}
+
+footer{
+    width: 100vw;
+    height: 10vh;
+}
