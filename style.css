@@ -231,3 +231,24 @@ footer{
     width: 100vw;
     height: 10vh;
 }
+
+.custom-shape-divider-bottom-1680494433 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1680494433 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-bottom-1680494433 .shape-fill {
+    fill: #ECF2FF;
+}
